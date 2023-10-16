@@ -1,2 +1,3 @@
 # todo-app
-to-do-list
+To do app build with html, css and basic javascript
+
