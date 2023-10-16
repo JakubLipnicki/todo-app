@@ -3,23 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>To Do</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-    <h1>To Do List</h1>
+        <div class="header">
+            <h1>To Do List <img src="coding.png" alt="coding-icon"></h1>
+        </div>
 
-    <input type="text">
-    <input type="button" value="Submit">
-    <div class="toDoList">
-        <span>test</span>
-        <input type="button" value="Done">
-        <input type="button" value="Delete">
+    <div class="taskContainer">
+        <input type="text" class="newTask" name="newTask" placeholder="Walk the dog">
+        <button type="button" class="submitButton" value="Submit">Submit</button>
     </div>
-    </div>
-
     
+        <ul id="list">
+            <li>1</li>
+            <li>2</li>
+        </ul>
+    
+    </div>
+    
+    <footer><a href="https://www.flaticon.com/free-icons/web-development" title="web development icons">Web development icons created by surang - Flaticon</a></footer>
     <script src="index.js"></script>
 </body>
 </html>
