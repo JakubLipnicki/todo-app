@@ -28,6 +28,7 @@ ul{
     font-family:Arial, Helvetica, sans-serif;
     background-color: white;
     border-radius: 0px 0px 10px 10px;
+    min-height: 100px;
 }
 .taskContainer{
     width: 100%;
@@ -37,6 +38,7 @@ ul{
     height: 30px;
     width: 100%;
     padding: 5px;
+    padding-left: 12px;
     margin: 0;
     border: 0;
     background-color: #B6FFFA;
@@ -81,6 +83,15 @@ footer{
     padding: 0;
     height: 50px;
     width: 50px;
+}
+p{
+    margin: 0;
+    padding: 10px;
+    color: grey;
+    overflow-wrap: break-word;
+    position: fixed;
+    justify-content: center;
+    text-align: center;
 }
 
 
