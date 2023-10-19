@@ -29,3 +29,16 @@ function placeholderRandom(number){
     }
 }
 placeholderRandom(randomNumber(6)); 
+function addToList() {
+    var taskValue = document.querySelector(".newTask").value;
+    if(taskValue == ''){
+        
+    }
+    else{
+    var ul = document.getElementById("list");
+    var li = document.createElement("li");
+    li.appendChild(document.createTextNode(taskValue));
+    ul.appendChild(li);
+    }
+  }
+
