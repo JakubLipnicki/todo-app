@@ -28,7 +28,15 @@ function placeholderRandom(number){
             break;
     }
 }
-placeholderRandom(randomNumber(6)); 
+function noList(){
+    let numberOfTasks = document.querySelector("ul").innerHTML;
+    if(numberOfTasks == ''){
+        document.querySelector("ul").innerHTML = "<p>Things you need to do</p>";
+    }
+    else{
+        document.querySelector("p").style.visibility = "hidden";
+    }
+}
 function addToList() {
     var taskValue = document.querySelector(".newTask").value;
     if(taskValue == ''){
@@ -39,6 +47,15 @@ function addToList() {
     var li = document.createElement("li");
     li.appendChild(document.createTextNode(taskValue));
     ul.appendChild(li);
+    document.querySelector(".newTask").value = '';
+    document.querySelector(".newTask").placeholder = "Add another task";
     }
+    noList();
   }
+function hideP(){
+
+}
+placeholderRandom(randomNumber(6)); 
+noList();
+
 
