@@ -21,7 +21,6 @@ li{
     text-align: left;
     margin: 0;
     padding: 12px 0px 12px 12px;
-    
 }
 ul{
     width: 500px;
@@ -102,7 +101,13 @@ p{
     justify-content: center;
     text-align: center;
 }
-
+li:hover{
+    cursor: pointer;
+}
+.del{
+    text-decoration: line-through;
+    color: grey;
+}
 
 
 

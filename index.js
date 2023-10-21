@@ -49,6 +49,7 @@ function addToList() {
     // delBtn.setAttribute("class", "deleteButton");
     // delBtn.innerHTML = "\u00d7";
     li.appendChild(document.createTextNode(taskValue));
+    li.setAttribute("onclick", "taskDone();");
     // li.appendChild(delBtn);
     ul.appendChild(li);
     document.querySelector(".newTask").value = '';
@@ -67,4 +68,8 @@ enterDown.addEventListener("keydown", function(event){
         addToList();
     }
 })
+
+function taskDone(){
+    document.querySelector("li").classList.add("del");
+}
 
