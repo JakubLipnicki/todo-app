@@ -49,8 +49,9 @@ function addToList() {
     ul.appendChild(li);
     document.querySelector(".newTask").value = '';
     document.querySelector(".newTask").placeholder = "Add another task";
-    }
     noList();
+    }
+    
   }
 function hideP(){
 
@@ -58,4 +59,10 @@ function hideP(){
 placeholderRandom(randomNumber(6)); 
 noList();
 
+var enterDown = document.getElementById("submitBtn");
+enterDown.addEventListener("keydown", function(event){
+    if(event.code == "Enter"){
+        addToList();
+    }
+})
 
