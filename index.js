@@ -45,11 +45,11 @@ function addToList() {
     else{
     var ul = document.getElementById("list");
     var li = document.createElement("li");
-    var delBtn = document.createElement("button");
-    delBtn.setAttribute('class', 'deleteButton');
-    delBtn.appendChild(document.createTextNode("Delete"));
+    // let delBtn = document.createElement("span");
+    // delBtn.setAttribute("class", "deleteButton");
+    // delBtn.innerHTML = "\u00d7";
     li.appendChild(document.createTextNode(taskValue));
-    li.appendChild(delBtn);
+    // li.appendChild(delBtn);
     ul.appendChild(li);
     document.querySelector(".newTask").value = '';
     document.querySelector(".newTask").placeholder = "Add another task";
