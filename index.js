@@ -45,7 +45,11 @@ function addToList() {
     else{
     var ul = document.getElementById("list");
     var li = document.createElement("li");
+    var delBtn = document.createElement("button");
+    delBtn.setAttribute('class', 'deleteButton');
+    delBtn.appendChild(document.createTextNode("Delete"));
     li.appendChild(document.createTextNode(taskValue));
+    li.appendChild(delBtn);
     ul.appendChild(li);
     document.querySelector(".newTask").value = '';
     document.querySelector(".newTask").placeholder = "Add another task";
@@ -53,9 +57,7 @@ function addToList() {
     }
     
   }
-function hideP(){
-
-}
+  
 placeholderRandom(randomNumber(6)); 
 noList();
 
